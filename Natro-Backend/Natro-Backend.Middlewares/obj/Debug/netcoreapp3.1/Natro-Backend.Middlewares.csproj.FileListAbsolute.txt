@@ -6,3 +6,4 @@ C:\Projects\Natro\Natro-Backend\Natro-Backend.Middlewares\obj\Debug\netcoreapp3.
 C:\Projects\Natro\Natro-Backend\Natro-Backend.Middlewares\obj\Debug\netcoreapp3.1\Natro-Backend.Middlewares.csproj.CoreCompileInputs.cache
 C:\Projects\Natro\Natro-Backend\Natro-Backend.Middlewares\obj\Debug\netcoreapp3.1\Natro-Backend.Middlewares.dll
 C:\Projects\Natro\Natro-Backend\Natro-Backend.Middlewares\obj\Debug\netcoreapp3.1\Natro-Backend.Middlewares.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Middlewares\obj\Debug\netcoreapp3.1\Natro-Backend.Middlewares.csprojAssemblyReference.cache

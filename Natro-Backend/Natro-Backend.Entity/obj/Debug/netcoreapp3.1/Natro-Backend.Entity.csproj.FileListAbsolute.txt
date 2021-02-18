@@ -6,3 +6,7 @@ C:\Projects\Natro\Natro-Backend\Natro-Backend.Entity\obj\Debug\netcoreapp3.1\Nat
 C:\Projects\Natro\Natro-Backend\Natro-Backend.Entity\obj\Debug\netcoreapp3.1\Natro-Backend.Entity.csproj.CoreCompileInputs.cache
 C:\Projects\Natro\Natro-Backend\Natro-Backend.Entity\obj\Debug\netcoreapp3.1\Natro-Backend.Entity.dll
 C:\Projects\Natro\Natro-Backend\Natro-Backend.Entity\obj\Debug\netcoreapp3.1\Natro-Backend.Entity.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Entity\bin\Debug\netcoreapp3.1\Natro-Backend.Entity.runtimeconfig.json
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Entity\bin\Debug\netcoreapp3.1\Natro-Backend.Entity.runtimeconfig.dev.json
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Entity\obj\Debug\netcoreapp3.1\Natro-Backend.Entity.csprojAssemblyReference.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Entity\obj\Debug\netcoreapp3.1\Natro-Backend.Entity.genruntimeconfig.cache
