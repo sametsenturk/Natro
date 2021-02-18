@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "DgpP49bLlf/C5iGrCpSmf1MbRjamQHLKDEAvqfU6p2HQURy695/yVQs+lv9Qh9zKKfa8E9QJWlUv85jBRPSjlQ==",
+  "dgSpecHash": "DE9TEJdFa/8GduHeXZhCa38yANmqaohw8V4V31JUdzzCoPF3o6JJaTms3bZ6DNBOZu++a+1sdFXKRfMQUntcdw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.API\\Natro-Backend.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Samet Şentürk\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Samet Şentürk\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\Samet Şentürk\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Samet Şentürk\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.12\\microsoft.aspnetcore.authentication.jwtbearer.3.1.12.nupkg.sha512",
     "C:\\Users\\Samet Şentürk\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Samet Şentürk\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Samet Şentürk\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

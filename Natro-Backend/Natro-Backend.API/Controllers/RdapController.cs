@@ -10,9 +10,7 @@ using Natro_Backend.BLL.Operation.RdapOperations;
 
 namespace Natro_Backend.API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class RdapController : ControllerBase
+    public class RdapController : BaseController
     {
 
         private readonly RdapOperations _rdapOperations;
