@@ -9,6 +9,7 @@ namespace Natro_Backend.Entity.Entities
     public class UserFavoriteEntity : BaseEntity
     {
         public string Domain { get; set; }
+        public bool IsAvailableToBuy { get; set; }
         public int UserID { get; set; }
 
         [ForeignKey("UserID")]
