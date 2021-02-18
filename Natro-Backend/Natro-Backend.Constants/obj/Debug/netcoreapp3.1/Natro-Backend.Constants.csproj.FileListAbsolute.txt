@@ -1,0 +1,8 @@
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Constants\bin\Debug\netcoreapp3.1\Natro-Backend.Constants.deps.json
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Constants\bin\Debug\netcoreapp3.1\Natro-Backend.Constants.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Constants\bin\Debug\netcoreapp3.1\Natro-Backend.Constants.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Constants\obj\Debug\netcoreapp3.1\Natro-Backend.Constants.AssemblyInfoInputs.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Constants\obj\Debug\netcoreapp3.1\Natro-Backend.Constants.AssemblyInfo.cs
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Constants\obj\Debug\netcoreapp3.1\Natro-Backend.Constants.csproj.CoreCompileInputs.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Constants\obj\Debug\netcoreapp3.1\Natro-Backend.Constants.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Constants\obj\Debug\netcoreapp3.1\Natro-Backend.Constants.pdb

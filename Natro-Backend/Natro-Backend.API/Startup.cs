@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Natro_Backend.BLL.Operation.RdapOperations;
+using Natro_Backend.BLL.Operation.UserOperations;
 using Natro_Backend.Core.Abstract;
 using Natro_Backend.Core.Concrate;
 using Natro_Backend.DAL.Abstract;
@@ -18,6 +19,8 @@ using Natro_Backend.Entity.Context;
 using Natro_Backend.Entity.Entities;
 using Natro_Backend.RDAP;
 using Natro_Backend.RDAP.Abstract;
+using Natro_Backend.Security.Abstract;
+using Natro_Backend.Security.Concrate;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -74,15 +77,22 @@ namespace Natro_Backend.API
 
             #region BLL Operations
             services.AddScoped<RdapOperations, RdapOperations>();
+            services.AddScoped<UserOperations, UserOperations>();
             #endregion
 
             #region Integration
-            
+
             #region RDAP
-            
+
             services.AddScoped<IDomainHelper, DomainHelper>();
-            
+
             #endregion
+
+            #endregion
+
+            #region Security
+
+            services.AddScoped<IHash, SHA512Hash>();
 
             #endregion
 

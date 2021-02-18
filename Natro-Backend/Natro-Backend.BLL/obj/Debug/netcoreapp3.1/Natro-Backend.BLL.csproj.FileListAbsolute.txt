@@ -12,3 +12,13 @@ C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-
 C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.Models.pdb
 C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.RDAP.pdb
 C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\obj\Debug\netcoreapp3.1\Natro-Backend.BLL.csproj.CopyComplete
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.Constants.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.Core.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.DAL.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.Entity.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.Security.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.Constants.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.DAL.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.Security.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.Core.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.Entity.pdb

@@ -1448,14 +1448,27 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Natro-Backend.Constants": "1.0.0",
+          "Natro-Backend.DAL": "1.0.0",
           "Natro-Backend.Models": "1.0.0",
-          "Natro-Backend.RDAP": "1.0.0"
+          "Natro-Backend.RDAP": "1.0.0",
+          "Natro-Backend.Security": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Natro-Backend.BLL.dll": {}
         },
         "runtime": {
           "bin/placeholder/Natro-Backend.BLL.dll": {}
+        }
+      },
+      "Natro-Backend.Constants/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Natro-Backend.Constants.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Natro-Backend.Constants.dll": {}
         }
       },
       "Natro-Backend.Core/1.0.0": {
@@ -1523,6 +1536,16 @@
         },
         "runtime": {
           "bin/placeholder/Natro-Backend.RDAP.dll": {}
+        }
+      },
+      "Natro-Backend.Security/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Natro-Backend.Security.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Natro-Backend.Security.dll": {}
         }
       }
     }
@@ -5544,6 +5567,11 @@
       "path": "../Natro-Backend.BLL/Natro-Backend.BLL.csproj",
       "msbuildProject": "../Natro-Backend.BLL/Natro-Backend.BLL.csproj"
     },
+    "Natro-Backend.Constants/1.0.0": {
+      "type": "project",
+      "path": "../Natro-Backend.Constants/Natro-Backend.Constants.csproj",
+      "msbuildProject": "../Natro-Backend.Constants/Natro-Backend.Constants.csproj"
+    },
     "Natro-Backend.Core/1.0.0": {
       "type": "project",
       "path": "../Natro-Backend.Core/Natro-Backend.Core.csproj",
@@ -5568,6 +5596,11 @@
       "type": "project",
       "path": "../Natro-Backend.RDAP/Natro-Backend.RDAP.csproj",
       "msbuildProject": "../Natro-Backend.RDAP/Natro-Backend.RDAP.csproj"
+    },
+    "Natro-Backend.Security/1.0.0": {
+      "type": "project",
+      "path": "../Natro-Backend.Security/Natro-Backend.Security.csproj",
+      "msbuildProject": "../Natro-Backend.Security/Natro-Backend.Security.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5583,7 +5616,8 @@
       "Natro-Backend.Core >= 1.0.0",
       "Natro-Backend.DAL >= 1.0.0",
       "Natro-Backend.Entity >= 1.0.0",
-      "Natro-Backend.Models >= 1.0.0"
+      "Natro-Backend.Models >= 1.0.0",
+      "Natro-Backend.Security >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5634,6 +5668,9 @@
             },
             "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.Models\\Natro-Backend.Models.csproj": {
               "projectPath": "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.Models\\Natro-Backend.Models.csproj"
+            },
+            "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.Security\\Natro-Backend.Security.csproj": {
+              "projectPath": "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.Security\\Natro-Backend.Security.csproj"
             }
           }
         }

@@ -6,8 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Natro-Backend.Constants\Natro-Backend.Constants.csproj" />
+    <ProjectReference Include="..\Natro-Backend.DAL\Natro-Backend.DAL.csproj" />
     <ProjectReference Include="..\Natro-Backend.Models\Natro-Backend.Models.csproj" />
     <ProjectReference Include="..\Natro-Backend.RDAP\Natro-Backend.RDAP.csproj" />
+    <ProjectReference Include="..\Natro-Backend.Security\Natro-Backend.Security.csproj" />
   </ItemGroup>
 
 </Project>
