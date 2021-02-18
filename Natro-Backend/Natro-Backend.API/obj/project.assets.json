@@ -1443,6 +1443,32 @@
           "bin/placeholder/Natro-Backend.BLL.dll": {}
         }
       },
+      "Natro-Backend.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Natro-Backend.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Natro-Backend.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Natro-Backend.Core.dll": {}
+        }
+      },
+      "Natro-Backend.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Natro-Backend.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Natro-Backend.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Natro-Backend.DAL.dll": {}
+        }
+      },
       "Natro-Backend.Entity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -5488,6 +5514,16 @@
       "path": "../Natro-Backend.BLL/Natro-Backend.BLL.csproj",
       "msbuildProject": "../Natro-Backend.BLL/Natro-Backend.BLL.csproj"
     },
+    "Natro-Backend.Core/1.0.0": {
+      "type": "project",
+      "path": "../Natro-Backend.Core/Natro-Backend.Core.csproj",
+      "msbuildProject": "../Natro-Backend.Core/Natro-Backend.Core.csproj"
+    },
+    "Natro-Backend.DAL/1.0.0": {
+      "type": "project",
+      "path": "../Natro-Backend.DAL/Natro-Backend.DAL.csproj",
+      "msbuildProject": "../Natro-Backend.DAL/Natro-Backend.DAL.csproj"
+    },
     "Natro-Backend.Entity/1.0.0": {
       "type": "project",
       "path": "../Natro-Backend.Entity/Natro-Backend.Entity.csproj",
@@ -5513,6 +5549,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.3",
       "Natro-Backend.BLL >= 1.0.0",
+      "Natro-Backend.Core >= 1.0.0",
+      "Natro-Backend.DAL >= 1.0.0",
       "Natro-Backend.Entity >= 1.0.0",
       "Natro-Backend.Models >= 1.0.0"
     ]
@@ -5553,6 +5591,12 @@
           "projectReferences": {
             "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.BLL\\Natro-Backend.BLL.csproj": {
               "projectPath": "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.BLL\\Natro-Backend.BLL.csproj"
+            },
+            "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.Core\\Natro-Backend.Core.csproj": {
+              "projectPath": "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.Core\\Natro-Backend.Core.csproj"
+            },
+            "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.DAL\\Natro-Backend.DAL.csproj": {
+              "projectPath": "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.DAL\\Natro-Backend.DAL.csproj"
             },
             "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.Entity\\Natro-Backend.Entity.csproj": {
               "projectPath": "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.Entity\\Natro-Backend.Entity.csproj"

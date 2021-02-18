@@ -5,4 +5,8 @@
     <RootNamespace>Natro_Backend.DAL</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Natro-Backend.Core\Natro-Backend.Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -22,6 +22,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Natro-Backend.BLL\Natro-Backend.BLL.csproj" />
+    <ProjectReference Include="..\Natro-Backend.Core\Natro-Backend.Core.csproj" />
+    <ProjectReference Include="..\Natro-Backend.DAL\Natro-Backend.DAL.csproj" />
     <ProjectReference Include="..\Natro-Backend.Entity\Natro-Backend.Entity.csproj" />
     <ProjectReference Include="..\Natro-Backend.Models\Natro-Backend.Models.csproj" />
   </ItemGroup>
