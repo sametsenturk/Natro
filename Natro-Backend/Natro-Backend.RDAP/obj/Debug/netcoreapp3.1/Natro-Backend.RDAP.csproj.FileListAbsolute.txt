@@ -1,0 +1,4 @@
+C:\Projects\Natro\Natro-Backend\Natro-Backend.RDAP\bin\Debug\netcoreapp3.1\Natro-Backend.Models.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.RDAP\obj\Debug\netcoreapp3.1\Natro-Backend.RDAP.csprojAssemblyReference.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.RDAP\obj\Debug\netcoreapp3.1\Natro-Backend.RDAP.AssemblyInfoInputs.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.RDAP\obj\Debug\netcoreapp3.1\Natro-Backend.RDAP.AssemblyInfo.cs
