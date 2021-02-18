@@ -5,4 +5,9 @@
     <RootNamespace>Natro_Backend.BLL</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Natro-Backend.Models\Natro-Backend.Models.csproj" />
+    <ProjectReference Include="..\Natro-Backend.RDAP\Natro-Backend.RDAP.csproj" />
+  </ItemGroup>
+
 </Project>

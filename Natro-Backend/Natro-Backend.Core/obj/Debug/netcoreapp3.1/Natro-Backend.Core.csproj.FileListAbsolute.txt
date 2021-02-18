@@ -1,0 +1,9 @@
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Core\bin\Debug\netcoreapp3.1\Natro-Backend.Core.deps.json
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Core\bin\Debug\netcoreapp3.1\Natro-Backend.Core.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Core\bin\Debug\netcoreapp3.1\Natro-Backend.Core.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Core\obj\Debug\netcoreapp3.1\Natro-Backend.Core.csprojAssemblyReference.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Core\obj\Debug\netcoreapp3.1\Natro-Backend.Core.AssemblyInfoInputs.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Core\obj\Debug\netcoreapp3.1\Natro-Backend.Core.AssemblyInfo.cs
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Core\obj\Debug\netcoreapp3.1\Natro-Backend.Core.csproj.CoreCompileInputs.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Core\obj\Debug\netcoreapp3.1\Natro-Backend.Core.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Core\obj\Debug\netcoreapp3.1\Natro-Backend.Core.pdb

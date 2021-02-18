@@ -1,0 +1,14 @@
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.BLL.deps.json
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.BLL.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.BLL.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\obj\Debug\netcoreapp3.1\Natro-Backend.BLL.csprojAssemblyReference.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\obj\Debug\netcoreapp3.1\Natro-Backend.BLL.AssemblyInfoInputs.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\obj\Debug\netcoreapp3.1\Natro-Backend.BLL.AssemblyInfo.cs
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\obj\Debug\netcoreapp3.1\Natro-Backend.BLL.csproj.CoreCompileInputs.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\obj\Debug\netcoreapp3.1\Natro-Backend.BLL.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\obj\Debug\netcoreapp3.1\Natro-Backend.BLL.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.Models.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.RDAP.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.Models.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\bin\Debug\netcoreapp3.1\Natro-Backend.RDAP.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.BLL\obj\Debug\netcoreapp3.1\Natro-Backend.BLL.csproj.CopyComplete

@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Configuration;
 using Natro_Backend.Models.Integration.RDAP.Request.Domain;
-using Natro_Backend.Models.Integration.RDAP.Response;
+using Natro_Backend.Models.Integration.RDAP.Response.Domain;
 using Natro_Backend.RDAP.Abstract;
 using Newtonsoft.Json;
 using System;
@@ -23,7 +23,7 @@ namespace Natro_Backend.RDAP
             _mapper = mapper;
         }
 
-        public async Task<CheckDomainResponseModel> CheckDomain(CheckDomainRequestModel request)
+        public async Task<CheckDomainResponseModel> CheckDomainAsync(CheckDomainRequestModel request)
         {
             CheckDomainResponseModel responseModel = new CheckDomainResponseModel();
             using (var httpClient = new HttpClient())
@@ -35,7 +35,7 @@ namespace Natro_Backend.RDAP
                         responseModel.Domain = request.Domain;
                         responseModel.IsAvailableToBuy = true;
                     }
-                    else
+                    else if (response.StatusCode != HttpStatusCode.InternalServerError)
                     {
                         string apiResponse = await response.Content.ReadAsStringAsync();
                         if (apiResponse != null && apiResponse != string.Empty)
@@ -43,9 +43,9 @@ namespace Natro_Backend.RDAP
                             WhoisResponse whoisResponse = JsonConvert.DeserializeObject<WhoisResponse>(apiResponse);
                             responseModel = _mapper.Map<WhoisResponse, CheckDomainResponseModel>(whoisResponse);
                         }
-                        else
-                            throw new Exception("API down.");
                     }
+                    else
+                        throw new Exception("API down.");
                 }
             }
             return responseModel;

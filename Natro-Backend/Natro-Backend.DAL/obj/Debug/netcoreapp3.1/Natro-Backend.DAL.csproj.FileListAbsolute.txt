@@ -1,0 +1,9 @@
+C:\Projects\Natro\Natro-Backend\Natro-Backend.DAL\bin\Debug\netcoreapp3.1\Natro-Backend.DAL.deps.json
+C:\Projects\Natro\Natro-Backend\Natro-Backend.DAL\bin\Debug\netcoreapp3.1\Natro-Backend.DAL.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.DAL\bin\Debug\netcoreapp3.1\Natro-Backend.DAL.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.DAL\obj\Debug\netcoreapp3.1\Natro-Backend.DAL.csprojAssemblyReference.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.DAL\obj\Debug\netcoreapp3.1\Natro-Backend.DAL.AssemblyInfoInputs.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.DAL\obj\Debug\netcoreapp3.1\Natro-Backend.DAL.AssemblyInfo.cs
+C:\Projects\Natro\Natro-Backend\Natro-Backend.DAL\obj\Debug\netcoreapp3.1\Natro-Backend.DAL.csproj.CoreCompileInputs.cache
+C:\Projects\Natro\Natro-Backend\Natro-Backend.DAL\obj\Debug\netcoreapp3.1\Natro-Backend.DAL.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.DAL\obj\Debug\netcoreapp3.1\Natro-Backend.DAL.pdb

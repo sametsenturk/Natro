@@ -1,15 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "yzQygARlIOVJ74Xah2z9DCuw2OKUZWh/9flyh8RQdi/o2dphabMfXaJbkHHVQNX+SaSDzN7hPYNy647+h0CIVQ==",
+  "dgSpecHash": "B/BTGt/zDPf/IyhN4O9yjq3m9/ncft6o1eIWRrcZLlBxik9qXDGUQw+6obuJC0v0J5DN4umL6wPP2F8FpceG6Q==",
   "success": true,
   "projectFilePath": "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.API\\Natro-Backend.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Samet Şentürk\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Samet Şentürk\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\Samet Şentürk\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Samet Şentürk\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Samet Şentürk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
     "C:\\Users\\Samet Şentürk\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
-    "C:\\Users\\Samet Şentürk\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
+    "C:\\Users\\Samet Şentürk\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Samet Şentürk\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Samet Şentürk\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
   ],
   "logs": []

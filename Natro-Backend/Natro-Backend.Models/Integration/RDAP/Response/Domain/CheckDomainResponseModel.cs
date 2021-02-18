@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Natro_Backend.Models.Integration.RDAP.Response
+namespace Natro_Backend.Models.Integration.RDAP.Response.Domain
 {
     public class CheckDomainResponseModel : BaseResponse
     {

@@ -1,5 +1,5 @@
 ﻿using Natro_Backend.Models.Integration.RDAP.Request.Domain;
-using Natro_Backend.Models.Integration.RDAP.Response;
+using Natro_Backend.Models.Integration.RDAP.Response.Domain;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,6 +9,6 @@ namespace Natro_Backend.RDAP.Abstract
 {
     public interface IDomainHelper
     {
-        Task<CheckDomainResponseModel> CheckDomain(CheckDomainRequestModel request);
+        Task<CheckDomainResponseModel> CheckDomainAsync(CheckDomainRequestModel request);
     }
 }

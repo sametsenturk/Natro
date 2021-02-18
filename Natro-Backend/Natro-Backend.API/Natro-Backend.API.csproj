@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Natro-Backend.BLL\Natro-Backend.BLL.csproj" />
     <ProjectReference Include="..\Natro-Backend.Models\Natro-Backend.Models.csproj" />
   </ItemGroup>
 
