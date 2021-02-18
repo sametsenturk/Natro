@@ -1010,6 +1010,9 @@
         }
       },
       "Natro-Backend.Models/1.0.0": {
+        "dependencies": {
+          "Natro-Backend.Entity": "1.0.0"
+        },
         "runtime": {
           "Natro-Backend.Models.dll": {}
         }

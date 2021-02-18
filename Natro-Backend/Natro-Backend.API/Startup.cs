@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Natro_Backend.BLL.Operation.RdapOperations;
+using Natro_Backend.BLL.Operation.UserFavoriteOperations;
 using Natro_Backend.BLL.Operation.UserOperations;
 using Natro_Backend.Core.Abstract;
 using Natro_Backend.Core.Concrate;
@@ -78,6 +79,7 @@ namespace Natro_Backend.API
             #region BLL Operations
             services.AddScoped<RdapOperations, RdapOperations>();
             services.AddScoped<UserOperations, UserOperations>();
+            services.AddScoped<UserFavoriteOperations, UserFavoriteOperations>();
             #endregion
 
             #region Integration

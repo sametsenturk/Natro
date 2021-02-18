@@ -5,4 +5,8 @@
     <RootNamespace>Natro_Backend.Models</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Natro-Backend.Entity\Natro-Backend.Entity.csproj" />
+  </ItemGroup>
+
 </Project>

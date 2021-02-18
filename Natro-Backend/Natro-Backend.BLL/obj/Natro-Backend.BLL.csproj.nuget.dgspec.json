@@ -377,7 +377,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.Entity\\Natro-Backend.Entity.csproj": {
+                "projectPath": "C:\\Projects\\Natro\\Natro-Backend\\Natro-Backend.Entity\\Natro-Backend.Entity.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

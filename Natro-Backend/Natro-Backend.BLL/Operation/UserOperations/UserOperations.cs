@@ -34,6 +34,7 @@ namespace Natro_Backend.BLL.Operation.UserOperations
             var user = _userService.Get(x => x.Username == request.Username && x.Password == _hash.Hash(request.Password)).FirstOrDefault();
             if (user != null)
             {
+                response.Email = user.Email;
                 response.JWT = GenerateJWT(user.ID, user.Username);
                 response.IsSuccess = true;
             }

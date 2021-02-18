@@ -14,5 +14,6 @@ namespace Natro_Backend.API.Controllers
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class BaseController : ControllerBase
     {
+        public string GetClaimValue(string claimType) => HttpContext.User.Claims.FirstOrDefault(x => x.Type == claimType)?.Value;
     }
 }

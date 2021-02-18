@@ -7,3 +7,6 @@ C:\Projects\Natro\Natro-Backend\Natro-Backend.Models\obj\Debug\netcoreapp3.1\Nat
 C:\Projects\Natro\Natro-Backend\Natro-Backend.Models\obj\Debug\netcoreapp3.1\Natro-Backend.Models.csproj.CoreCompileInputs.cache
 C:\Projects\Natro\Natro-Backend\Natro-Backend.Models\obj\Debug\netcoreapp3.1\Natro-Backend.Models.dll
 C:\Projects\Natro\Natro-Backend\Natro-Backend.Models\obj\Debug\netcoreapp3.1\Natro-Backend.Models.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Models\bin\Debug\netcoreapp3.1\Natro-Backend.Entity.dll
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Models\bin\Debug\netcoreapp3.1\Natro-Backend.Entity.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.Models\obj\Debug\netcoreapp3.1\Natro-Backend.Models.csproj.CopyComplete

@@ -21,7 +21,7 @@ namespace Natro_Backend.API.Controllers
         }
 
         [HttpGet]
-        [Route("checkdomain")]
+        [Route("checkdomain/{domain}")]
         public async Task<CheckDomainResponseModel> CheckDomain(CheckDomainRequestModel request)
         {
             CheckDomainResponseModel response = await _rdapOperations.CheckDomainAsync(request);
