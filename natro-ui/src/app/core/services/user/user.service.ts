@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
@@ -25,8 +25,13 @@ export class UserService {
 
   login(request: LoginRequest) : Observable<LoginResponse> {
      return this.httpClient.post<LoginResponse>(
-       `${this.API_URL}/${this.Controller}/login`, request, { headers: this.baseService.getHeaders() }
+       `${this.API_URL}/${this.Controller}/login`, request, { headers: this.baseService.getHeaders(), }
      );
+  }
+
+  validateToken(): boolean {
+    let token = localStorage.getItem("token");
+    return token != null && token != undefined && token.length > 0;
   }
 
 }

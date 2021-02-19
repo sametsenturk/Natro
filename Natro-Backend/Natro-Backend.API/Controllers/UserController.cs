@@ -1,4 +1,6 @@
 ﻿using AutoMapper.Configuration;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Natro_Backend.BLL.Operation.UserOperations;
