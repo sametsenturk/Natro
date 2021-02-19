@@ -1,0 +1,21 @@
+.form {
+    width: 60%;
+    margin:0 auto;
+    margin-top: 1%;
+    background: #7b1fa2;
+}
+
+.mat-form-field {
+    margin-top: 1%;
+    align-self: center;
+}
+
+.mat-card-content {
+    margin-top: 2%;
+    width: 100%;
+    display: inline-grid;
+}
+
+.mat-input-element {
+    caret-color: white;
+}

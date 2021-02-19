@@ -11,11 +11,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
 import { SearchComponent } from './features/search/search.component';
 import { ProfileComponent } from './features/profile/profile.component';
 import { FavoritesComponent } from './features/favorites/favorites.component';
 import { LoginComponent } from './features/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { DialogComponent } from './shared/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +27,11 @@ import { FormsModule } from '@angular/forms';
     SearchComponent,
     ProfileComponent,
     FavoritesComponent,
-    LoginComponent
+    LoginComponent,
+    DialogComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -36,7 +41,8 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
