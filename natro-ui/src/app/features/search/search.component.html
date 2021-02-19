@@ -1,0 +1,19 @@
+<mat-card class="searchcontainer">
+    <mat-form-field class="max-width">
+        <mat-placeholder>Ex. Natro.com</mat-placeholder>
+        <input matInput [(ngModel)]="searchValue" type="search">
+        <mat-hint align="start">Domain</mat-hint>
+       <button mat-button (click)="search()" matSuffix mat-stroked-button aria-label="search" class="btnSearch">
+        <mat-icon>search</mat-icon>
+       </button>
+    </mat-form-field>
+    <mat-card-content class="content" *ngIf="isSearched">
+        <mat-form-field class="max-width">
+            <mat-label>Domain Details</mat-label>
+            <textarea matInput disabled></textarea>
+        </mat-form-field>
+        <button mat-button (click)="addFavorite()" matSuffix mat-stroked-button aria-label="search" class="btnfavorite">
+        <mat-icon>star</mat-icon>
+       </button>
+    </mat-card-content>
+</mat-card>

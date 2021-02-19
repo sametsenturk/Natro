@@ -1,0 +1,37 @@
+.searchcontainer {
+    width: 85%;
+    margin:0 auto;
+    margin-top: 1%;
+    background: #7b1fa2;
+    height: -webkit-fill-available;
+}
+
+.searchcontainer > form {
+    padding: 25px;
+}
+
+.mat-input-element {
+    caret-color: white;
+}
+
+.btnSearch {
+    float: right;
+    padding: 2%;
+}
+
+.max-width {
+    width:100%;
+}
+
+.content {
+    margin-top:2%;
+}
+
+textarea {
+    height: 300px;
+}
+
+.btnfavorite {
+    float: right;
+    padding: 2%;
+}
