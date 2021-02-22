@@ -20,7 +20,6 @@ import { LoginComponent } from './features/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DialogComponent } from './shared/dialog/dialog.component';
-import { AuthGuard } from './core/guards/auth.guard';
 import { BooleanPipe } from './core/pipes/boolean.pipe';
 
 @NgModule({

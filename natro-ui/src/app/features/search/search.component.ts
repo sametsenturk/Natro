@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddFavoriteRequest } from 'src/app/core/models/favorite/request/addFavoriteRequest';
+import { CheckDomainResponse } from 'src/app/core/models/rdap/response/checkDomainResponse';
 import { FavoritesService } from 'src/app/core/services/favorites/favorites.service';
 import { RdapService } from 'src/app/core/services/rdap/rdap.service';
 import { DialogComponent } from 'src/app/shared/dialog/dialog.component';
@@ -22,6 +23,7 @@ export class SearchComponent implements OnInit {
   isSearched: boolean = false;
   searchValue: string = "";
   searchResult: string = "";
+  response: CheckDomainResponse;
 
   ngOnInit(): void {
   }
@@ -38,8 +40,15 @@ export class SearchComponent implements OnInit {
             }
           });
          } else {
-            this.searchResult = (res.domain + "/" + res.isAvailableToBuy + "/" + res.ownerAdress);
+            this.searchResult = "";
+            this.searchResult += `Domain: ${res.domain} \n`;
+            this.searchResult += `Is Available To Buy: ${res.isAvailableToBuy ? "Yes" : "No"} \n`;
+            this.searchResult += `Name Server 1: ${res.nameserver1} \n`;
+            this.searchResult += `Name Server 2: ${res.nameserver2} \n`;
+            this.searchResult += `Last Change: ${res.lastChange} \n`;
+            this.searchResult += `Expire Date: ${res.expireDate}`;
             this.isSearched = true;
+            this.response = res;
          }
       });
     }
@@ -48,6 +57,12 @@ export class SearchComponent implements OnInit {
   addFavorite(): void {
     let request = new AddFavoriteRequest();
     request.domain = this.searchValue;
+    request.expireDate = this.response.expireDate;
+    request.isAvailableToBuy = this.response.isAvailableToBuy;
+    request.lastChange = this.response.lastChange;
+    request.nameserver1 = this.response.nameserver1;
+    request.nameserver2 = this.response.nameserver2;
+    
     this.favoritesService.addFavorite(request).subscribe(res => {
       if(!res.isSuccess) {
         this.dialog.open(DialogComponent, {

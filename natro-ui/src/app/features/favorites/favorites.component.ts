@@ -17,7 +17,7 @@ export class FavoritesComponent implements OnInit {
     private dialog: MatDialog,
   ) { }
 
-  displayedColumns: string[] = ['domain', 'isAvailableToBuy', 'delete'];
+  displayedColumns: string[] = ['domain', 'nameserver1', 'nameserver2', 'expireDate', 'lastChange', 'isAvailableToBuy', 'delete'];
   dataSource: UserFavoriteEntity[];
 
   ngOnInit(): void {
