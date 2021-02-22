@@ -1,4 +1,4 @@
 
 export class BaseEntity {
-    iD: number; 
+    id: number; 
 }

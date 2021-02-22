@@ -1,1 +1,14 @@
-<p>profile works!</p>
+<mat-card class="profile-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{email}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image class="profile-picture" src="https://st2.depositphotos.com/5682790/10456/v/600/depositphotos_104564156-stock-illustration-male-user-icon.jpg">
+  <mat-card-content>
+  </mat-card-content>
+  <mat-card-actions>
+    <button (click)="exit()" mat-button matSuffix mat-stroked-button>
+        EXIT <mat-icon>close</mat-icon>    
+    </button>
+  </mat-card-actions>
+</mat-card>

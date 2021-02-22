@@ -12,6 +12,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatTableModule } from '@angular/material/table';
 import { SearchComponent } from './features/search/search.component';
 import { ProfileComponent } from './features/profile/profile.component';
 import { FavoritesComponent } from './features/favorites/favorites.component';
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DialogComponent } from './shared/dialog/dialog.component';
 import { AuthGuard } from './core/guards/auth.guard';
+import { BooleanPipe } from './core/pipes/boolean.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { AuthGuard } from './core/guards/auth.guard';
     ProfileComponent,
     FavoritesComponent,
     LoginComponent,
-    DialogComponent
+    DialogComponent,
+    BooleanPipe
   ],
   imports: [
     HttpClientModule,
@@ -43,7 +46,8 @@ import { AuthGuard } from './core/guards/auth.guard';
     MatInputModule,
     MatCardModule,
     FormsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,7 +10,7 @@
     <mat-card-content class="content" *ngIf="isSearched">
         <mat-form-field class="max-width">
             <mat-label>Domain Details</mat-label>
-            <textarea matInput disabled></textarea>
+            <textarea matInput [(ngModel)]="searchResult" disabled></textarea>
         </mat-form-field>
         <button mat-button (click)="addFavorite()" matSuffix mat-stroked-button aria-label="search" class="btnfavorite">
         <mat-icon>star</mat-icon>

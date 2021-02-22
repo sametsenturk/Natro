@@ -1,1 +1,25 @@
-<p>favorites works!</p>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 favoritesTable">
+
+
+  <ng-container matColumnDef="domain">
+    <th mat-header-cell *matHeaderCellDef> Domain </th>
+    <td mat-cell *matCellDef="let element"> {{element.domain}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="isAvailableToBuy">
+    <th mat-header-cell *matHeaderCellDef> Is Available To Buy </th>
+    <td mat-cell *matCellDef="let element"> {{element.isAvailableToBuy | booleanPipe:element.isAvailableToBuy }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="delete">
+    <th mat-header-cell *matHeaderCellDef> Delete </th>
+    <td mat-cell *matCellDef="let element">
+        <button (click)="deleteFavorite(element.id)" mat-button matSuffix mat-stroked-button>
+        <mat-icon>delete</mat-icon>
+       </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

@@ -1,0 +1,26 @@
+.profile-card {
+    max-width: 400px;
+    margin:0 auto;
+    margin-top: 1%;
+    background: #7b1fa2;    
+  }
+
+.profile-picture {
+    width: 50%;
+    margin:0 auto;
+    display: block;
+    border-radius: 50%;
+}
+
+mat-card-title {
+    display: block;
+    align-self: center;
+}
+
+mat-card-actions {
+    width: 100%;
+}
+
+mat-card-actions > button {
+    align-self: center;
+}

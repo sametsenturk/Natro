@@ -13,7 +13,7 @@ export class BaseService {
   getHeaders(): HttpHeaders {
     let headers = new HttpHeaders();
     headers = headers.append("Content-Type", "application/json");
-    if (this.token != null && this.token !== undefined && this.token.length > 0) {
+    if (this.token !== null && this.token !== undefined && this.token.length > 0) {
       headers = headers.append("Authorization", "Bearer " + this.token);
     }
     return headers;

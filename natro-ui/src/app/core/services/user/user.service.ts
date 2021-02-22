@@ -14,7 +14,6 @@ export class UserService {
 
   constructor(
     private httpClient: HttpClient,
-    private router: Router,
     private baseService: BaseService
   ) { }
 
@@ -32,6 +31,15 @@ export class UserService {
   validateToken(): boolean {
     let token = localStorage.getItem("token");
     return token != null && token != undefined && token.length > 0;
+  }
+
+  getEmail(): string {
+    return localStorage.getItem("email");
+  }
+
+  exit() {
+    localStorage.removeItem("token");
+    localStorage.removeItem("email");
   }
 
 }
