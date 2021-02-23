@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddFavoriteRequest } from 'src/app/core/models/favorite/request/addFavoriteRequest';
@@ -10,7 +11,7 @@ import { DialogComponent } from 'src/app/shared/dialog/dialog.component';
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css'],
-  providers: [RdapService, FavoritesService]
+  providers: [RdapService, FavoritesService, DatePipe]
 })
 export class SearchComponent implements OnInit {
 
@@ -18,6 +19,7 @@ export class SearchComponent implements OnInit {
     private rdapService: RdapService,
     private favoritesService: FavoritesService,
     private dialog: MatDialog,
+    private datePipe: DatePipe
   ) { }
 
   isSearched: boolean = false;
@@ -45,8 +47,8 @@ export class SearchComponent implements OnInit {
             this.searchResult += `Is Available To Buy: ${res.isAvailableToBuy ? "Yes" : "No"} \n`;
             this.searchResult += `Name Server 1: ${res.nameserver1} \n`;
             this.searchResult += `Name Server 2: ${res.nameserver2} \n`;
-            this.searchResult += `Last Change: ${res.lastChange} \n`;
-            this.searchResult += `Expire Date: ${res.expireDate}`;
+            this.searchResult += `Last Change: ${this.datePipe.transform(res.lastChange, 'medium')} \n`;
+            this.searchResult += `Expire Date: ${this.datePipe.transform(res.expireDate, 'medium')}`;
             this.isSearched = true;
             this.response = res;
          }
