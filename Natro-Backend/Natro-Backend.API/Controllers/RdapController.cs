@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Natro_Backend.Models.Integration.RDAP.Response.Domain;
-using Natro_Backend.Models.Integration.RDAP.Request.Domain;
 using Natro_Backend.BLL.Operation.RdapOperations;
 
 namespace Natro_Backend.API.Controllers
@@ -22,9 +21,9 @@ namespace Natro_Backend.API.Controllers
 
         [HttpGet]
         [Route("checkdomain/{domain}")]
-        public async Task<CheckDomainResponseModel> CheckDomain(CheckDomainRequestModel request)
+        public async Task<CheckDomainResponseModel> CheckDomain(string domain)
         {
-            CheckDomainResponseModel response = await _rdapOperations.CheckDomainAsync(request);
+            CheckDomainResponseModel response = await _rdapOperations.CheckDomainAsync(domain);
             return response;
         }
     }

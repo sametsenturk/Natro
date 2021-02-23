@@ -36,6 +36,11 @@ namespace Natro_Backend.BLL.Operation.UserFavoriteOperations
                 _userFavoriteService.Add(new UserFavoriteEntity
                 {
                     Domain = request.Domain,
+                    ExpireDate = request.ExpireDate,
+                    IsAvailableToBuy = request.IsAvailableToBuy,
+                    LastChange = request.LastChange,
+                    Nameserver1 = request.Nameserver1,
+                    Nameserver2 = request.Nameserver2,
                     UserID = userId
                 });
                 response.IsSuccess = true;

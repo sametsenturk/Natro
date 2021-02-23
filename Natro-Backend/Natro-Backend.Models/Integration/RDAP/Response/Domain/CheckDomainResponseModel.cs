@@ -8,8 +8,9 @@ namespace Natro_Backend.Models.Integration.RDAP.Response.Domain
     {
         public string Domain { get; set; }
         public bool IsAvailableToBuy { get; set; }
-        public string OwnerName { get; set; }
-        public string OwnerAdress { get; set; }
-        public string OwnerPhoneNumber { get; set; }
+        public string Nameserver1 { get; set; }
+        public string Nameserver2 { get; set; }
+        public DateTime LastChange { get; set; }
+        public DateTime ExpireDate { get; set; }
     }
 }

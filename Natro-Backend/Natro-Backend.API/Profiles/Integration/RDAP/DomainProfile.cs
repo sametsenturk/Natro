@@ -14,7 +14,10 @@ namespace Natro_Backend.API.Profiles.Integration.RDAP
             CreateMap<WhoisResponse, CheckDomainResponseModel>()
                 .ForMember(x => x.Domain, opt => opt.MapFrom(src => src.ldhName))
                 .ForMember(x => x.IsAvailableToBuy, opt => opt.MapFrom(src => false))
-                .ForMember(x => x.OwnerName, opt => opt.MapFrom(src => src.entities.ToString())); // TODO GET OWNER DETAILS
+                .ForMember(x => x.Nameserver1, opt => opt.MapFrom(src => src.nameservers[0].ldhName))
+                .ForMember(x => x.Nameserver2, opt => opt.MapFrom(src => src.nameservers[1].ldhName))
+                .ForMember(x => x.LastChange, opt => opt.MapFrom(src => src.events.FirstOrDefault(x => x.eventAction == "last update of RDAP database").eventDate))
+                .ForMember(x => x.ExpireDate, opt => opt.MapFrom(src => src.events.FirstOrDefault(x => x.eventAction == "expiration").eventDate));
         }
     }
 }

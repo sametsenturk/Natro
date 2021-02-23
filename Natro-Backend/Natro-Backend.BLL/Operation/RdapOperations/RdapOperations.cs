@@ -1,5 +1,4 @@
-﻿using Natro_Backend.Models.Integration.RDAP.Request.Domain;
-using Natro_Backend.Models.Integration.RDAP.Response.Domain;
+﻿using Natro_Backend.Models.Integration.RDAP.Response.Domain;
 using Natro_Backend.RDAP.Abstract;
 using System;
 using System.Collections.Generic;
@@ -17,9 +16,9 @@ namespace Natro_Backend.BLL.Operation.RdapOperations
             _domainHelper = domainHelper;
         }
 
-        public async Task<CheckDomainResponseModel> CheckDomainAsync(CheckDomainRequestModel request)
+        public async Task<CheckDomainResponseModel> CheckDomainAsync(string domain)
         {
-            CheckDomainResponseModel response = await _domainHelper.CheckDomainAsync(request);
+            CheckDomainResponseModel response = await _domainHelper.CheckDomainAsync(domain);
             return response;
         }
     }

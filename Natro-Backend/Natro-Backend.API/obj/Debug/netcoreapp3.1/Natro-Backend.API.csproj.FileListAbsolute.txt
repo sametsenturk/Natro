@@ -80,3 +80,4 @@ C:\Projects\Natro\Natro-Backend\Natro-Backend.API\bin\Debug\netcoreapp3.1\Natro-
 C:\Projects\Natro\Natro-Backend\Natro-Backend.API\bin\Debug\netcoreapp3.1\Natro-Backend.DAL.pdb
 C:\Projects\Natro\Natro-Backend\Natro-Backend.API\bin\Debug\netcoreapp3.1\Natro-Backend.Security.pdb
 C:\Projects\Natro\Natro-Backend\Natro-Backend.API\bin\Debug\netcoreapp3.1\Natro-Backend.Constants.pdb
+C:\Projects\Natro\Natro-Backend\Natro-Backend.API\bin\Debug\netcoreapp3.1\Quartz.dll

@@ -9,7 +9,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Natro_Backend.API.Quartz;
+using Natro_Backend.API.Quartz.Jobs;
 using Natro_Backend.BLL.Operation.RdapOperations;
+using Natro_Backend.BLL.Operation.UserFavoriteNotificationOperations;
 using Natro_Backend.BLL.Operation.UserFavoriteOperations;
 using Natro_Backend.BLL.Operation.UserOperations;
 using Natro_Backend.Core.Abstract;
@@ -22,6 +25,9 @@ using Natro_Backend.RDAP;
 using Natro_Backend.RDAP.Abstract;
 using Natro_Backend.Security.Abstract;
 using Natro_Backend.Security.Concrate;
+using Quartz;
+using Quartz.Impl;
+using Quartz.Spi;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -69,17 +75,20 @@ namespace Natro_Backend.API
             #region Repository
             services.AddScoped<IRepository<UserEntity>, Repository<UserEntity>>();
             services.AddScoped<IRepository<UserFavoriteEntity>, Repository<UserFavoriteEntity>>();            
+            services.AddScoped<IRepository<UserFavoriteNotificationEntity>, Repository<UserFavoriteNotificationEntity>>();
             #endregion
 
             #region Repository Services
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserFavoriteService, UserFavoriteService>();
+            services.AddScoped<IUserFavoriteNotificationService, UserFavoriteNotificationService>();
             #endregion
 
             #region BLL Operations
             services.AddScoped<RdapOperations, RdapOperations>();
             services.AddScoped<UserOperations, UserOperations>();
             services.AddScoped<UserFavoriteOperations, UserFavoriteOperations>();
+            services.AddScoped<UserFavoriteNotificationOperations, UserFavoriteNotificationOperations>();
             #endregion
 
             #region Integration
@@ -100,6 +109,20 @@ namespace Natro_Backend.API
 
             services.AddControllers();
             services.AddAutoMapper(typeof(Startup));
+
+            #region Quartz 
+
+            services.AddSingleton<IJobFactory, SingletonJobFactory>();
+            services.AddSingleton<ISchedulerFactory, StdSchedulerFactory>();
+
+            services.AddSingleton<UserFavoriteJob>();
+            services.AddSingleton(new JobSchedule(                
+                jobType: typeof(UserFavoriteJob),
+                cronExpression: "0/5 * * * * ?")); // run every 5 seconds
+
+            services.AddHostedService<QuartzHostedService>();
+
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -122,7 +145,7 @@ namespace Natro_Backend.API
             app.UseRouting();
 
             app.UseAuthorization();
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

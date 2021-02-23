@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Configuration;
-using Natro_Backend.Models.Integration.RDAP.Request.Domain;
 using Natro_Backend.Models.Integration.RDAP.Response.Domain;
 using Natro_Backend.RDAP.Abstract;
 using Newtonsoft.Json;
@@ -23,17 +22,18 @@ namespace Natro_Backend.RDAP
             _mapper = mapper;
         }
 
-        public async Task<CheckDomainResponseModel> CheckDomainAsync(CheckDomainRequestModel request)
+        public async Task<CheckDomainResponseModel> CheckDomainAsync(string domain)
         {
             CheckDomainResponseModel responseModel = new CheckDomainResponseModel();
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync($"{apiUrl}/domain/{request.Domain}"))
+                using (var response = await httpClient.GetAsync($"{apiUrl}/domain/{domain}"))
                 {
                     if (response.StatusCode == HttpStatusCode.NotFound)
                     {
-                        responseModel.Domain = request.Domain;
+                        responseModel.Domain = domain;
                         responseModel.IsAvailableToBuy = true;
+                        responseModel.IsSuccess = true;
                     }
                     else if (response.StatusCode != HttpStatusCode.InternalServerError)
                     {
@@ -42,6 +42,7 @@ namespace Natro_Backend.RDAP
                         {
                             WhoisResponse whoisResponse = JsonConvert.DeserializeObject<WhoisResponse>(apiResponse);
                             responseModel = _mapper.Map<WhoisResponse, CheckDomainResponseModel>(whoisResponse);
+                            responseModel.IsSuccess = true;
                         }
                     }
                     else

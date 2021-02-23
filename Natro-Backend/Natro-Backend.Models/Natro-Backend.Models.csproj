@@ -9,4 +9,9 @@
     <ProjectReference Include="..\Natro-Backend.Entity\Natro-Backend.Entity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="API\FavoriteNotification\Request\" />
+    <Folder Include="Integration\RDAP\Request\Domain\" />
+  </ItemGroup>
+
 </Project>

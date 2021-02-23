@@ -6,5 +6,7 @@ namespace Natro_Backend.Models.Integration
 {
     public class BaseResponse
     {
+        public bool IsSuccess { get; set; }
+        public string ErrorMessage { get; set; }
     }
 }

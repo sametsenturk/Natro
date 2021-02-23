@@ -13,11 +13,13 @@ namespace Natro_Backend.Entity.Context
 
         public DbSet<UserEntity> Users { get; set; }
         public DbSet<UserFavoriteEntity> UserFavorites { get; set; }
+        public DbSet<UserFavoriteNotificationEntity> UserFavoriteNotifications { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UserEntityMap());
             modelBuilder.ApplyConfiguration(new UserFavoriteEntityMap());
+            modelBuilder.ApplyConfiguration(new UserFavoriteNotificationEntityMap());
         }
 
     }

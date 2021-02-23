@@ -10,9 +10,14 @@ namespace Natro_Backend.Entity.Entities
     {
         public string Domain { get; set; }
         public bool IsAvailableToBuy { get; set; }
+        public string Nameserver1 { get; set; }
+        public string Nameserver2 { get; set; }
+        public DateTime LastChange { get; set; }
+        public DateTime ExpireDate { get; set; }
         public int UserID { get; set; }
 
         [ForeignKey("UserID")]
         public virtual UserEntity User { get; set; }
+        public virtual List<UserFavoriteNotificationEntity> UserFavoriteNotifications { get; set; }
     }
 }

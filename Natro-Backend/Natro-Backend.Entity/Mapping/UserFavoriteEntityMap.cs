@@ -14,6 +14,7 @@ namespace Natro_Backend.Entity.Mapping
             builder.HasKey(x => x.ID);
             builder.Property(x => x.UserID).IsRequired();
             builder.Property(x => x.Domain).HasMaxLength(30).IsRequired();
+            builder.Property(x => x.IsAvailableToBuy).IsRequired();
 
             builder.HasIndex(x => x.UserID);
         }

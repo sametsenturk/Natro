@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Natro-Backend.API", "Natro-Backend.API\Natro-Backend.API.csproj", "{779D0805-031B-4034-A149-60C03A942071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Natro-Backend.API", "Natro-Backend.API\Natro-Backend.API.csproj", "{779D0805-031B-4034-A149-60C03A942071}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom", "Custom", "{6357D4CC-5437-4186-B56B-5BF9EFE832C2}"
 EndProject
@@ -11,25 +11,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helper", "Helper", "{8AF92D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other", "Other", "{BAF671A5-2234-4E2E-9CAF-572AE9CBAFD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Natro-Backend.BLL", "Natro-Backend.BLL\Natro-Backend.BLL.csproj", "{986F8CE9-B053-4BD9-BB88-2A189290A1AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Natro-Backend.BLL", "Natro-Backend.BLL\Natro-Backend.BLL.csproj", "{986F8CE9-B053-4BD9-BB88-2A189290A1AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Natro-Backend.Core", "Natro-Backend.Core\Natro-Backend.Core.csproj", "{9E8ECC47-95B6-402C-BF10-17AD935F1210}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Natro-Backend.Core", "Natro-Backend.Core\Natro-Backend.Core.csproj", "{9E8ECC47-95B6-402C-BF10-17AD935F1210}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Natro-Backend.DAL", "Natro-Backend.DAL\Natro-Backend.DAL.csproj", "{F50FB86A-B9EA-4AEC-B1DE-6C49F78F9286}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Natro-Backend.DAL", "Natro-Backend.DAL\Natro-Backend.DAL.csproj", "{F50FB86A-B9EA-4AEC-B1DE-6C49F78F9286}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Natro-Backend.Entity", "Natro-Backend.Entity\Natro-Backend.Entity.csproj", "{28755174-7621-4526-9BD5-D4EB19D3B46D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Natro-Backend.Entity", "Natro-Backend.Entity\Natro-Backend.Entity.csproj", "{28755174-7621-4526-9BD5-D4EB19D3B46D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Natro-Backend.Models", "Natro-Backend.Models\Natro-Backend.Models.csproj", "{FA6A079F-2F4F-42BF-857D-97437049E5EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Natro-Backend.Models", "Natro-Backend.Models\Natro-Backend.Models.csproj", "{FA6A079F-2F4F-42BF-857D-97437049E5EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Natro-Backend.Middlewares", "Natro-Backend.Middlewares\Natro-Backend.Middlewares.csproj", "{88340345-CA06-495A-A8DA-D0D98F2881F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Natro-Backend.Middlewares", "Natro-Backend.Middlewares\Natro-Backend.Middlewares.csproj", "{88340345-CA06-495A-A8DA-D0D98F2881F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{AE71B78D-8EFA-493F-82DC-280FE4232EF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Natro-Backend.RDAP", "Natro-Backend.RDAP\Natro-Backend.RDAP.csproj", "{27C797FE-E49F-4C85-8AA3-598F565EF679}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Natro-Backend.RDAP", "Natro-Backend.RDAP\Natro-Backend.RDAP.csproj", "{27C797FE-E49F-4C85-8AA3-598F565EF679}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Natro-Backend.Security", "Natro-Backend.Security\Natro-Backend.Security.csproj", "{89A6F4DD-875B-4C6D-B7B5-A53C6649A818}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Natro-Backend.Security", "Natro-Backend.Security\Natro-Backend.Security.csproj", "{89A6F4DD-875B-4C6D-B7B5-A53C6649A818}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Natro-Backend.Constants", "Natro-Backend.Constants\Natro-Backend.Constants.csproj", "{A846574F-3C53-4363-A5B9-F824E43930AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Natro-Backend.Constants", "Natro-Backend.Constants\Natro-Backend.Constants.csproj", "{A846574F-3C53-4363-A5B9-F824E43930AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
